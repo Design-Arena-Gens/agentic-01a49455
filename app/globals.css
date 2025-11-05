@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0f19;
+  --fg: #eaeff7;
+  --muted: #94a3b8;
+  --primary: #6366f1; /* indigo-500 */
+  --accent: #22d3ee; /* cyan-400 */
+}
+
+body {
+  color: var(--fg);
+  background:
+    radial-gradient(1200px 600px at 70% -20%, rgba(34, 211, 238, 0.10), transparent 60%),
+    radial-gradient(1000px 500px at -10% 10%, rgba(99, 102, 241, 0.12), transparent 60%),
+    var(--bg);
+  min-height: 100vh;
+}
+
+.container-prose p { @apply text-slate-300; }
